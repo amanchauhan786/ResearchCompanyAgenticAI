@@ -2,6 +2,9 @@
 
 ## Eightfold.ai AI Agent Building Assignment Submission
 
+### Live Application
+**Deployed Application**: https://agenticairesearch.streamlit.app/
+
 ### Problem Statement: Company Research Assistant (Account Plan Generator)
 
 This project implements an interactive AI agent that helps users research companies through natural conversation and generate comprehensive account plans, fulfilling all specified requirements.
@@ -136,16 +139,57 @@ External Services    Data Processing
 - Additional packages for audio processing and utilities
 
 ### Installation and Setup
-1. Environment setup with virtual environment
-2. Dependency installation via requirements.txt
-3. Google Gemini API key configuration
-4. Application execution via streamlit run command
+
+#### Local Development
+1. Clone the repository:
+```bash
+git clone https://github.com/amanchauhan786/ResearchCompanyAgenticAI.git
+cd ResearchCompanyAgenticAI
+```
+
+2. Create and activate virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the application:
+```bash
+streamlit run main.py
+```
+
+#### Cloud Deployment
+The application is deployed on Streamlit Community Cloud and accessible at:
+**https://agenticairesearch.streamlit.app/**
 
 ### Configuration Options
 - AI persona selection (5 distinct styles)
 - Audio settings (auto-play enable/disable)
 - Search preferences and result limits
 - Account plan template customization
+
+## Live Demo Access
+
+### Immediate Testing
+Visit the deployed application: **https://agenticairesearch.streamlit.app/**
+
+### API Key Requirement
+To use the application, you need a Google Gemini API key:
+1. Visit https://aistudio.google.com/
+2. Create an API key
+3. Enter the key in the application sidebar
+
+### Test Scenarios for Demonstration
+1. **Basic Research**: "Research Tesla company"
+2. **Persona Testing**: "Research Microsoft as Creative Strategist"
+3. **Voice Interaction**: Use the microphone button for voice input
+4. **Plan Generation**: "Create account plan for Apple"
+5. **Edge Cases**: Test with ambiguous or invalid inputs
 
 ## Evaluation Criteria Alignment
 
@@ -181,6 +225,21 @@ External Services    Data Processing
 4. **Edge Case Handling**: Graceful management of invalid inputs and ambiguous requests
 5. **Real-time Plan Editing**: Interactive modification of generated account plans
 
+## Project Repository
+
+**GitHub Repository**: https://github.com/amanchauhan786/ResearchCompanyAgenticAI
+
+### Repository Structure
+```
+ResearchCompanyAgenticAI/
+├── main.py                 # Primary application interface
+├── agent.py               # Core AI agent logic
+├── tools.py               # Search and data processing
+├── audio.py               # Voice input/output handling
+├── requirements.txt       # Project dependencies
+└── README.md             # Comprehensive documentation
+```
+
 ## Limitations and Future Enhancements
 
 ### Current Limitations
@@ -196,17 +255,6 @@ External Services    Data Processing
 - Collaborative features for team-based research
 - Extended persona library for specialized use cases
 
-## Repository Structure
-```
-ResearchCompanyAgenticAI/
-├── main.py                 # Primary application interface
-├── agent.py               # Core AI agent logic
-├── tools.py               # Search and data processing
-├── audio.py               # Voice input/output handling
-├── requirements.txt       # Project dependencies
-└── README.md             # Comprehensive documentation
-```
-
 ## Submission Compliance
 
 This implementation fully addresses all specified requirements:
@@ -218,3 +266,14 @@ This implementation fully addresses all specified requirements:
 - Comprehensive documentation including architecture and design decisions
 
 The agent demonstrates sophisticated conversational capabilities, intelligent agentic behavior, robust technical implementation, and adaptive intelligence across multiple user scenarios.
+
+## Contact and Support
+
+For questions or issues regarding the deployed application or source code, please refer to the GitHub repository or contact through the submission platform.
+
+---
+**Live Application**: https://agenticairesearch.streamlit.app/
+
+**Source Code**: https://github.com/amanchauhan786/ResearchCompanyAgenticAI
+
+**Submission Date**: November 2024
